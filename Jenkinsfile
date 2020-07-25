@@ -2,7 +2,7 @@ pipeline {
   agent any 
   tools {
     maven 'Maven'
-  }
+        }
   stages {
     stage ('Initialize') {
       steps {
@@ -10,5 +10,8 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
             ''' 
-      }
-    }
+            }
+        }
+  }
+}
+    
